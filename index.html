@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Cen网盘</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        #container {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 50px;
+        }
+        input[type=text] {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-top: 40px;
+        }
+        input[type=submit] {
+            width: 100px;
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #3e8e41;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 100px;
+            font-size: 14px;
+            text-align: center;
+            color: #aaa;
+        }
+    </style>
+    <script>
+        function openLink() {
+            var code = document.getElementsByName("code")[0].value;
+            if (code !== "") {
+                window.open("https://static.box3.codemao.cn/block/" + code);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Cen网盘</h1>
+        <form action="#" method="get">
+            <input type="text" name="code" placeholder="请输入提取码">
+            <input type="submit" value="提取" onClick="openLink()">
+        </form>
+        <p>本网盘暂不支持上传文件，敬请期待</p>
+    </div>
+    <footer>&copy; 2023 CoderM. All rights reserved.</footer>
+</body>
+</html>
